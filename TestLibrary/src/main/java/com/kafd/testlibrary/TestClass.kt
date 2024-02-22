@@ -1,4 +1,5 @@
 package com.kafd.testlibrary
 
-class TestClass {
+object TestClass {
+    val x = 50
 }
