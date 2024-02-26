@@ -19,3 +19,16 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# Keep public API classes and methods
+-keep public class com.kafd.testlibrary.TestClass {
+    public *;
+}
+
+# Keep public classes annotated with @Keep
+-keep @com.kafd.testlibrary.Keep public class * {
+    public *;
+}
+
+# Keep public classes referenced in the AndroidManifest.xml file
+-keep class com.kafd.testlibrary.** { *; }
+-keep class com.kafd.testlibrary.CustomTextView { *; }

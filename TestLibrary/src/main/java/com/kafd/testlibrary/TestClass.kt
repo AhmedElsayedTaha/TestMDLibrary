@@ -1,5 +1,13 @@
 package com.kafd.testlibrary
 
-object TestClass {
-    val x = 50
+
+class TestClass {
+    fun doSomething(): Int {
+       val result = internalMethod()
+        return result
+    }
+
+    private fun internalMethod(): Int {
+        return 5+6
+    }
 }
